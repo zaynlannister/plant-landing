@@ -22,7 +22,7 @@ const HeaderSection = () => {
         </div>
       </div>
       <StyledHeaderContent className="relative">
-        <div className="absolute left-[42%] header-content__text">
+        <div className="w-[58%] ml-auto header-content__text">
           <p className="text-[70px] font-bold text-[#418A1C] header-content__text-1">
             Plant a tree today
           </p>
@@ -77,7 +77,7 @@ const StyledHeaderContent = styled.div`
     }
     .header-content__text {
       margin-top: 40px;
-      position: unset;
+      width: 100%;
     }
     .header-content__text-1 {
       font-size: 50px;
