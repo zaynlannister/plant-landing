@@ -1,4 +1,5 @@
 import HeaderSection from "./components/Header/HeaderSection";
+import OrderSection from "./components/OrderPlantSection/OrderSection";
 import PlantContent from "./components/PlantContent/PlantContent";
 
 const App = () => {
@@ -9,6 +10,9 @@ const App = () => {
       </div>
       <div className="py-20">
         <PlantContent />
+      </div>
+      <div className="py-20">
+        <OrderSection />
       </div>
     </div>
   );

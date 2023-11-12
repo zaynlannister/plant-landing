@@ -41,7 +41,7 @@ const StyledPlantContent = styled.div`
       height: 200px;
     }
   }
-  @media (max-width: 475px) {
+  @media (max-width: 490px) {
     .plant-content__img-2 {
       width: 100%;
     }
