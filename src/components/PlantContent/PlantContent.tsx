@@ -16,7 +16,7 @@ const PlantContent = () => {
         <div className="bg-[#f7ffec] w-fit p-4 plant-content__img-2">
           <img src="/assets/img/pngwing2.png" />
         </div>
-        <p className="w-[385px] my-6 font-bold text-[#888e81]">
+        <p className="w-[385px] my-6 font-bold text-[#888e81] plant-content__text-2">
           That were not animals, and included algae and however, all current
           definitions
         </p>
@@ -40,8 +40,11 @@ const StyledPlantContent = styled.div`
       width: 200px;
       height: 200px;
     }
+    .plant-content__text-2 {
+      width: 100%;
+    }
   }
-  @media (max-width: 490px) {
+  @media (max-width: 1180px) {
     .plant-content__img-2 {
       width: 100%;
     }

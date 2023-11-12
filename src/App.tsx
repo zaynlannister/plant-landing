@@ -1,3 +1,4 @@
+import FooterSection from "./components/Footer/FooterSection";
 import HeaderSection from "./components/Header/HeaderSection";
 import OrderSection from "./components/OrderPlantSection/OrderSection";
 import PlantContent from "./components/PlantContent/PlantContent";
@@ -13,6 +14,9 @@ const App = () => {
       </div>
       <div className="py-20">
         <OrderSection />
+      </div>
+      <div className="py-20 bg-[#F7FFEC]">
+        <FooterSection />
       </div>
     </div>
   );

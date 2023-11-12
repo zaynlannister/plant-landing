@@ -3,21 +3,23 @@ import styled from "styled-components";
 
 const HeaderSection = () => {
   return (
-    <div className="container">
+    <StyledHeader className="container">
       <div className="flex justify-between items-center">
         <div>
           <img width={60} height={50} src="/assets/img/logo.png" alt="logo" />
         </div>
         <div className="flex items-center gap-8">
-          <a className="custom-link" href="#home">
-            Home
-          </a>
-          <a className="custom-link" href="#home">
-            About
-          </a>
-          <a className="custom-link" href="#home">
-            Contact
-          </a>
+          <div className="flex items-center gap-8 header-nav">
+            <a className="custom-link" href="#home">
+              Home
+            </a>
+            <a className="custom-link" href="#home">
+              About
+            </a>
+            <a className="custom-link" href="#home">
+              Contact
+            </a>
+          </div>
           <PrimaryButton>Order now</PrimaryButton>
         </div>
       </div>
@@ -51,7 +53,7 @@ const HeaderSection = () => {
           </div>
         </div>
       </StyledHeaderContent>
-    </div>
+    </StyledHeader>
   );
 };
 
@@ -84,6 +86,14 @@ const StyledHeaderContent = styled.div`
     }
     .header-content__text-2 {
       font-size: 40px;
+    }
+  }
+`;
+
+const StyledHeader = styled.div`
+  @media (max-width: 540px) {
+    .header-nav {
+      display: none;
     }
   }
 `;
