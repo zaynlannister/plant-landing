@@ -1,16 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #081800;
 }
 
 .container {
   width: min(1120px, 100%);
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.custom-link {
+  font-weight: 600;
+  color: #888e81;
+  transition: 100ms all;
+}
+.custom-link:hover {
+  color: #418a1c;
 }
