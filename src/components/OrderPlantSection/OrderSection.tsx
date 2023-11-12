@@ -34,11 +34,13 @@ const OrderSection = () => {
           </div>
           <PlantComponent {...plants[1]} />
         </div>
-        <div className="w-[50%] order-container">
+        <div className="w-[50%] order-container flex flex-col justify-between">
           <div className="mb-4">
-            <p className="font-bold text-[50px]">Get our greatest plants</p>
+            <p className="font-bold text-[50px] order__text-1">
+              Get our greatest plants
+            </p>
           </div>
-          <PlantComponent {...plants[2]} width="350" />
+          <PlantComponent {...plants[2]} remove={true} />
         </div>
       </div>
       <div className="mt-6">
@@ -53,8 +55,11 @@ const StyledOrderSection = styled.div`
     .order-block {
       flex-direction: column;
     }
-    & .order-container {
+    .order-container {
       width: 100%;
+    }
+    .order__text-1 {
+      font-size: 30px;
     }
   }
 `;

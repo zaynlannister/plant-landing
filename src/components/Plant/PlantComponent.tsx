@@ -5,18 +5,17 @@ interface Plant {
   description: string;
   img: string;
   price: string;
-  width?: string;
+  remove?: boolean;
 }
 
 const PlantComponent = (props: Plant) => {
   return (
     <StyledPlantComponent className="bg-[#F7FFEC] flex items-center p-8 w-[500px]">
-      <div className="mr-4" style={{ objectFit: "cover" }}>
-        <img
-          width={props.width ? props.width : ""}
-          src={`/assets/img/${props.img}`}
-          alt="img"
-        />
+      <div
+        className={`mr-4 ${props.remove && "hidden"}`}
+        style={{ objectFit: "cover" }}
+      >
+        <img src={`/assets/img/${props.img}`} alt="img" />
       </div>
       <div>
         <p className="text-[25px] font-[600]">{props.name}</p>
